@@ -1,0 +1,11 @@
+{
+  "domain": "hzsz_git_plugin",
+  "name": "hzsz_git_plugin",
+  "codeowners": [],
+  "config_flow": true,
+  "dependencies": ["persistent_notification", "repairs"],
+  "documentation": "",
+  "iot_class": "local_polling",
+  "requirements": ["gitpython"],
+  "version": "1.0.0"
+}

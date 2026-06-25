@@ -1,0 +1,70 @@
+{
+    "config": {
+        "error": {
+            "repo_url_required": "仓库地址不能为空",
+            "invalid_url_format": "URL 必须以 http://、https:// 或 git@ 开头",
+            "cannot_connect": "无法连接到仓库，请检查填写的信息",
+            "select_ref": "请选择分支或标签"
+        },
+        "step": {
+            "user": {
+                "title": "第 1 步：连接 Git 仓库",
+                "description": "输入 Git 仓库地址及可选的账号密码，连接仓库获取分支和标签列表。",
+                "data": {
+                    "repo_url": "Git 仓库地址",
+                    "username": "用户名（可选）",
+                    "password": "密码 / Token（可选）"
+                }
+            },
+            "select_ref": {
+                "title": "第 2 步：选择版本",
+                "description": "仓库: {repo_url}\n{fetch_message}\n\n请从下拉列表中选择要安装的版本：",
+                "data": {
+                    "branch": "选择分支 / 标签",
+                    "delete_existing": "覆盖已存在的同名组件"
+                }
+            }
+        }
+    },
+    "options": {
+        "error": {
+            "repo_url_required": "仓库地址不能为空",
+            "invalid_url_format": "URL 必须以 http://、https:// 开头",
+            "cannot_connect": "无法连接到仓库",
+            "select_ref": "请选择分支或标签"
+        },
+        "step": {
+            "user": {
+                "title": "第 1 步：更新仓库连接",
+                "description": "修改仓库地址和认证信息后，将重新获取分支/标签列表。",
+                "data": {
+                    "repo_url": "Git 仓库地址",
+                    "username": "用户名（可选）",
+                    "password": "密码 / Token（可选）"
+                }
+            },
+            "select_ref": {
+                "title": "第 2 步：选择版本",
+                "description": "仓库: {repo_url}\n{fetch_message}",
+                "data": {
+                    "branch": "选择分支 / 标签",
+                    "delete_existing": "覆盖已存在的同名组件"
+                }
+            }
+        }
+    },
+    "issues": {
+        "restart_required": {
+            "title": "需要重启 Home Assistant",
+            "description": "以下新组件已安装到 custom_components 目录：\n\n{name}\n\n需要重启 Home Assistant 以加载这些组件。\n点击下方「修复」按钮，然后确认重启。",
+            "fix_flow": {
+                "step": {
+                    "confirm_restart": {
+                        "title": "确认重启",
+                        "description": "已安装以下组件：\n\n{name}\n\n点击提交将立即重启 Home Assistant 以加载新组件。"
+                    }
+                }
+            }
+        }
+    }
+}

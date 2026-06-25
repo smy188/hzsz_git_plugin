@@ -1,0 +1,16 @@
+install:
+  name: "Download components from Git repository"
+  description: >
+    Manually trigger a re-download of all component folders from the configured
+    Git repository entries into custom_components.
+    Specify an entry_id to target a single entry, or omit to install all entries.
+  fields:
+    entry_id:
+      name: "Config Entry ID"
+      description: >
+        Optional. The config entry ID of a specific Git repo to install.
+        Leave empty to re-download from all configured repositories.
+      required: false
+      example: "01JABCDEFGHIJKLMNOPQRSTUVWX"
+      selector:
+        text:

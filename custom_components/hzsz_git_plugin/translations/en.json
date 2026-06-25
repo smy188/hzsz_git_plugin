@@ -1,0 +1,70 @@
+{
+    "config": {
+        "error": {
+            "repo_url_required": "Repository URL is required",
+            "invalid_url_format": "URL must start with http://, https://, or git@",
+            "cannot_connect": "Cannot connect to the repository. Please check your settings.",
+            "select_ref": "Please select a branch or tag"
+        },
+        "step": {
+            "user": {
+                "title": "Step 1: Connect to Git Repository",
+                "description": "Enter the Git repository URL and optional credentials to fetch branches and tags.",
+                "data": {
+                    "repo_url": "Git Repository URL",
+                    "username": "Username (optional)",
+                    "password": "Password / Token (optional)"
+                }
+            },
+            "select_ref": {
+                "title": "Step 2: Select Version",
+                "description": "Repository: {repo_url}\n{fetch_message}\n\nSelect a version from the dropdown below:",
+                "data": {
+                    "branch": "Select branch / tag",
+                    "delete_existing": "Overwrite existing components with same name"
+                }
+            }
+        }
+    },
+    "options": {
+        "error": {
+            "repo_url_required": "Repository URL is required",
+            "invalid_url_format": "URL must start with http:// or https://",
+            "cannot_connect": "Cannot connect to the repository",
+            "select_ref": "Please select a branch or tag"
+        },
+        "step": {
+            "user": {
+                "title": "Step 1: Update Repository Connection",
+                "description": "Update the repository URL and authentication info to re-fetch branch/tag list.",
+                "data": {
+                    "repo_url": "Git Repository URL",
+                    "username": "Username (optional)",
+                    "password": "Password / Token (optional)"
+                }
+            },
+            "select_ref": {
+                "title": "Step 2: Select Version",
+                "description": "Repository: {repo_url}\n{fetch_message}",
+                "data": {
+                    "branch": "Select branch / tag",
+                    "delete_existing": "Overwrite existing components with same name"
+                }
+            }
+        }
+    },
+    "issues": {
+        "restart_required": {
+            "title": "Restart required",
+            "description": "New components have been installed:\n\n{name}\n\nHome Assistant needs to restart to load these components.\nClick the Fix button below, then confirm the restart.",
+            "fix_flow": {
+                "step": {
+                    "confirm_restart": {
+                        "title": "Confirm restart",
+                        "description": "The following components have been installed:\n\n{name}\n\nClick Submit to restart Home Assistant now."
+                    }
+                }
+            }
+        }
+    }
+}
