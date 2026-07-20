@@ -1,0 +1,30 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "HZSZ_IOT_001",
+        "description": "Configure the MQTT broker connection for HZSZ_IOT_001 devices.\n\nThese settings will be saved and reused each time Home Assistant starts. They persist until you remove this integration.",
+        "data": {
+          "host": "MQTT Broker Host",
+          "port": "MQTT Broker Port",
+          "username": "MQTT Username",
+          "password": "MQTT Password"
+        }
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "MQTT Connection Settings",
+        "description": "Update the MQTT broker connection details.",
+        "data": {
+          "host": "MQTT Broker Host",
+          "port": "MQTT Broker Port",
+          "username": "MQTT Username",
+          "password": "MQTT Password"
+        }
+      }
+    }
+  }
+}
